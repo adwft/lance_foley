@@ -1,0 +1,374 @@
+/* _base.scss */
+
+.body2 {
+     margin: 0;
+     background: url('../img/IMG_0240.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+.body-about {
+     margin: 0;
+     background: url('../img/bg/lance3_2800x1867.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+
+h1 {
+	font-family: $narrow-font-family;
+    font-size: 24px !important;
+    color: $black !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+h2 {
+	font-family: $reg-font-family;
+    font-size: 16px !important;
+    color: $black !important;
+    font-weight: bold;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-left: 0px !important;
+}
+
+h3 {
+	font-family: $serif-font-family;
+    font-size: 16px !important;
+    line-height: 1.2em;
+    color: $black !important;
+    font-weight: normal;
+    margin-top: 10px !important;
+    a:link{ 
+      color: $lt-grey !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 16px !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+}
+
+h4 {
+	font-family: $reg-font-family;
+    font-size: 16px !important;
+    color: $black !important;
+    font-weight: bold;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+h5 {
+	font-family: $reg-font-family;
+    font-size: 4em !important;
+    color: $black !important;
+    font-weight: normal;
+    margin-top: 30% !important;
+    margin-bottom: 10px !important;
+    margin-left: 0px !important;
+}
+
+h6 {
+	font-family: $serif-font-family;
+    font-size: 1.3em !important;
+    line-height: 1.3em !important;
+    color: $black !important;
+    opacity: 0.5;
+    font-style: italic;
+    margin-top: 10px !important;
+}
+
+.about-text {
+	font-family: $reg-font-family;
+    font-size: 2em !important;
+    line-height: 1.2em;
+    color: $black !important;
+    font-weight: normal;
+    margin-bottom: 10px !important;
+    margin-left: 0px !important;
+    margin-top: 6% !important;
+    a:link{ 
+      color: $lt-grey !important;
+      font-style: normal;
+      font-weight: normal;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+}
+
+.page-header {
+	font-family: $reg-font-family;
+    font-size: 16px !important;
+    color: $black !important;
+    font-weight: bold;
+}
+
+.main-copy {
+  font-family: $serif-font-family;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden;
+  	a:link{ 
+      color: $lt-grey !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.4em;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+}
+
+.modal-content {
+  font-family: $serif-font-family;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important; 
+  	a:link{ 
+      color: $lt-grey !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.4em;
+      padding-top: 20px !important;
+      margin-top: 20px !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+}
+
+.project-style {
+  font-family: $reg-font-family;
+  letter-spacing: 0.6em;
+  padding-bottom: 0px !important;
+  overflow: hidden;
+  	.large {
+  		font-size: 1.4em;
+		  	a:link{ 
+		      color: $lt-grey !important;
+		      font-style: normal;
+		      font-weight: normal;
+		    }
+		    a:hover{ 
+		      color: $black !important;
+		      text-decoration: none; 
+		    }
+		    a:focus{
+		      color: $black !important;
+		      text-decoration: none;     
+		    }
+		    a:active{
+		     color: $black !important; 
+		     text-decoration: none;    
+		    }
+	}
+	.small {
+  		font-size: 1em;
+		  	a:link{ 
+		      color: $lt-grey !important;
+		      font-style: normal;
+		      font-weight: normal;
+		    }
+		    a:hover{ 
+		      color: $black !important;
+		      text-decoration: none; 
+		    }
+		    a:focus{
+		      color: $black !important;
+		      text-decoration: none;     
+		    }
+		    a:active{
+		     color: $black !important; 
+		     text-decoration: none;    
+		    }
+	}
+}
+
+.side-copy {
+  font-family: $serif-font-family;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  	a:link{ 
+      color: $lt-grey !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.4em;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+}
+
+body {
+	font-family: $serif-font-family;
+	font-size: $serif-font-size;
+	line-height: 1.4em;
+	color: $black;
+}
+
+a {
+	color: $lt-grey;
+	letter-spacing: 0.5px;
+		.lurge-link:link{
+			font-size: 24px;
+			font-style: italic;
+		}
+		.lurge-link:hover{
+			font-size: 24px;
+			font-style: italic;
+			color: $black;
+		}
+}
+
+//
+//
+//
+//
+// Lists
+
+.extra-pad-left{
+ 	padding-left: 0px !important;
+ }
+
+.extra-pad-right{
+  	padding-right: 0px !important;
+ }
+
+.list-unstyled.love li{
+	font-family: $reg-font-family;
+	position: relative;
+  	padding:0 7% 5% 7%;
+
+	//img {
+		//border:1px solid #4682b4;
+	//}
+
+	a:link{ 
+      color: $lt-grey !important;
+      font-style: normal;
+      font-weight: normal;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+}
+
+/* ======= change the no-love image ========== */
+.list-new {
+	font-family: $reg-font-family;
+	//position: relative;
+  	//padding:0 7% 5% 7%;
+
+	//img {
+	//	border:1px solid #4682b4;
+	//}
+
+	a:link{ 
+      color: $lt-grey !important;
+      font-style: normal;
+      font-weight: normal;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
+}
+
+//
+//
+//
+//
+
+.jumbotron {
+	height: 100%;
+	background-image: url("../img/one.jpg");
+	background-size: cover;
+}
+
+// Image 
+img.device{
+	width: 100%;
+}

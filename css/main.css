@@ -1,0 +1,491 @@
+/* 
+	Lance Foley
+	Author: Lance Foley
+	Version: 0.0.1
+*/
+/* _normalize.scss */
+.extra-pad {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.extra-pad-top {
+  padding-top: 40px; }
+
+.extra-pad-top2 {
+  padding-top: 20px;
+  margin-top: 20px; }
+
+.extra-pad-bottom {
+  padding-bottom: 40px;
+  margin-bottom: 40px; }
+
+.space-pad {
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+
+.space-pad-2 {
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+.extra-pad-left {
+  padding-left: 30px; }
+
+.extra-pad-right {
+  padding-right: 30px; }
+
+.margin-right {
+  margin-right: 30px; }
+
+.margin-left {
+  margin-left: 30px; }
+
+/* _base.scss */
+.body2 {
+  margin: 0;
+  background: url("../img/IMG_0240.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.body-about {
+  margin: 0;
+  background: url("../img/bg/lance3_2800x1867.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+h1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 24px !important;
+  color: black !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important; }
+
+h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px !important;
+  color: black !important;
+  font-weight: bold;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin-left: 0px !important; }
+
+h3 {
+  font-family: "PT Serif", serif;
+  font-size: 16px !important;
+  line-height: 1.2em;
+  color: black !important;
+  font-weight: normal;
+  margin-top: 10px !important; }
+  h3 a:link {
+    color: #b0afaf !important;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px !important; }
+  h3 a:hover {
+    color: black !important;
+    text-decoration: none; }
+  h3 a:focus {
+    color: black !important;
+    text-decoration: none; }
+  h3 a:active {
+    color: black !important;
+    text-decoration: none; }
+
+h4 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px !important;
+  color: black !important;
+  font-weight: bold;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important; }
+
+h5 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 4em !important;
+  color: black !important;
+  font-weight: normal;
+  margin-top: 30% !important;
+  margin-bottom: 10px !important;
+  margin-left: 0px !important; }
+
+h6 {
+  font-family: "PT Serif", serif;
+  font-size: 1.3em !important;
+  line-height: 1.3em !important;
+  color: black !important;
+  opacity: 0.5;
+  font-style: italic;
+  margin-top: 10px !important; }
+
+.about-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 2em !important;
+  line-height: 1.2em;
+  color: black !important;
+  font-weight: normal;
+  margin-bottom: 10px !important;
+  margin-left: 0px !important;
+  margin-top: 6% !important; }
+  .about-text a:link {
+    color: #b0afaf !important;
+    font-style: normal;
+    font-weight: normal; }
+  .about-text a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .about-text a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .about-text a:visited {
+    color: black !important;
+    text-decoration: none; }
+  .about-text a:active {
+    color: black !important;
+    text-decoration: none; }
+
+.page-header {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px !important;
+  color: black !important;
+  font-weight: bold; }
+
+.main-copy {
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden; }
+  .main-copy a:link {
+    color: #b0afaf !important;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.4em; }
+  .main-copy a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .main-copy a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .main-copy a:visited {
+    color: black !important;
+    text-decoration: none; }
+  .main-copy a:active {
+    color: black !important;
+    text-decoration: none; }
+
+.modal-content {
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important; }
+  .modal-content a:link {
+    color: #b0afaf !important;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.4em;
+    padding-top: 20px !important;
+    margin-top: 20px !important; }
+  .modal-content a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .modal-content a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .modal-content a:active {
+    color: black !important;
+    text-decoration: none; }
+
+.project-style {
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.6em;
+  padding-bottom: 0px !important;
+  overflow: hidden; }
+  .project-style .large {
+    font-size: 1.4em; }
+    .project-style .large a:link {
+      color: #b0afaf !important;
+      font-style: normal;
+      font-weight: normal; }
+    .project-style .large a:hover {
+      color: black !important;
+      text-decoration: none; }
+    .project-style .large a:focus {
+      color: black !important;
+      text-decoration: none; }
+    .project-style .large a:active {
+      color: black !important;
+      text-decoration: none; }
+  .project-style .small {
+    font-size: 1em; }
+    .project-style .small a:link {
+      color: #b0afaf !important;
+      font-style: normal;
+      font-weight: normal; }
+    .project-style .small a:hover {
+      color: black !important;
+      text-decoration: none; }
+    .project-style .small a:focus {
+      color: black !important;
+      text-decoration: none; }
+    .project-style .small a:active {
+      color: black !important;
+      text-decoration: none; }
+
+.side-copy {
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important; }
+  .side-copy a:link {
+    color: #b0afaf !important;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.4em; }
+  .side-copy a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .side-copy a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .side-copy a:active {
+    color: black !important;
+    text-decoration: none; }
+
+body {
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  line-height: 1.4em;
+  color: black; }
+
+a {
+  color: #b0afaf;
+  letter-spacing: 0.5px; }
+  a .lurge-link:link {
+    font-size: 24px;
+    font-style: italic; }
+  a .lurge-link:hover {
+    font-size: 24px;
+    font-style: italic;
+    color: black; }
+
+.extra-pad-left {
+  padding-left: 0px !important; }
+
+.extra-pad-right {
+  padding-right: 0px !important; }
+
+.list-unstyled.love li {
+  font-family: "PT Sans", sans-serif;
+  position: relative;
+  padding: 0 7% 5% 7%; }
+  .list-unstyled.love li a:link {
+    color: #b0afaf !important;
+    font-style: normal;
+    font-weight: normal; }
+  .list-unstyled.love li a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .list-unstyled.love li a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .list-unstyled.love li a:active {
+    color: black !important;
+    text-decoration: none; }
+
+/* ======= change the no-love image ========== */
+.list-new {
+  font-family: "PT Sans", sans-serif; }
+  .list-new a:link {
+    color: #b0afaf !important;
+    font-style: normal;
+    font-weight: normal; }
+  .list-new a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .list-new a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .list-new a:active {
+    color: black !important;
+    text-decoration: none; }
+
+.jumbotron {
+  height: 100%;
+  background-image: url("../img/one.jpg");
+  background-size: cover; }
+
+img.device {
+  width: 100%; }
+
+/* _sections.scss */
+#rectangle {
+  width: 110px;
+  height: 2px;
+  background: black; }
+
+/* -----------------------------------------------------------------------------
+
+  NAVBAR
+  
+----------------------------------------------------------------------------- */
+.navbar {
+  border: none;
+  background: white !important; }
+
+.navbar-brand {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 26px !important;
+  color: black !important; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black; }
+
+.nav {
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.5px;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important; }
+  .nav a:hover {
+    color: black !important; }
+  .nav a:focus {
+    color: black !important; }
+  .nav a:active {
+    color: black !important; }
+
+/* -----------------------------------------------------------------------------
+
+  NEW ANIMATED 90 degree turn HAMBURGER CLASSES
+  
+----------------------------------------------------------------------------- */
+.navbar-toggle {
+  border: none;
+  background: transparent !important; }
+  .navbar-toggle:hover {
+    background: transparent !important; }
+  .navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s; }
+  .navbar-toggle .top-bar {
+    -webkit-transform: translateX(6px) translateY(6px) rotateZ(90deg);
+    -ms-transform: translateX(6px) translateY(6px) rotateZ(90deg);
+    transform: translateX(6px) translateY(6px) rotateZ(90deg); }
+  .navbar-toggle .middle-bar {
+    -webkit-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    transform: rotateZ(90deg); }
+  .navbar-toggle .bottom-bar {
+    -webkit-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
+    -ms-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
+    transform: translateX(-6px) translateY(-6px) rotateZ(90deg); }
+
+.navbar-toggle.collapsed .top-bar {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0); }
+.navbar-toggle.collapsed .middle-bar {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0); }
+.navbar-toggle.collapsed .bottom-bar {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0); }
+
+.top-bar-modal {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.bottom-bar-modal {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+@media (min-width: 768px) {
+  .side-copy {
+    text-align: right;
+    float: left !important; }
+
+  .nav {
+    font-size: 16px; }
+    .nav li {
+      margin: 0px 0; } }
+@media (max-width: 767px) {
+  .image-left {
+    height: 50%;
+    width: 50%;
+    float: left !important;
+    padding: 0 10px 0 0px !important; }
+
+  .text-left {
+    padding: 2em 0 0 0 !important; }
+
+  .extra-pad-left {
+    padding-left: 0px !important; }
+
+  .extra-pad-right {
+    padding-right: 0px !important; }
+
+  .extra-pad-top {
+    padding-top: 0px !important; }
+
+  .extra-pad-top2 {
+    padding-top: 20px !important; }
+
+  .list-unstyled.love li {
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 0 0 40% 0px !important; }
+    .list-unstyled.love li span {
+      height: 70px;
+      display: table-cell;
+      vertical-align: bottom; }
+  .list-unstyled.love img {
+    height: 50%;
+    width: 50%;
+    float: left;
+    padding: 0 10px 0 0px !important; }
+
+  .device {
+    display: block;
+    margin: 20px auto 0 auto; }
+
+  .device-small {
+    margin-bottom: 20px !important; }
+
+  .nav {
+    font-size: 2em; }
+    .nav li {
+      margin: 20px 0; }
+
+  h4 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 2em !important;
+    color: black !important;
+    font-weight: normal !important;
+    margin-top: 10px !important;
+    margin-bottom: 5px !important; }
+
+  h1 {
+    padding-top: 30px; }
+
+  h5 {
+    font-size: 3em !important;
+    color: black !important;
+    margin-top: 9% !important;
+    margin-bottom: 10px !important;
+    margin-left: 0px !important; }
+
+  h6 {
+    font-size: 1.3em !important;
+    font-style: italic;
+    margin-top: 10px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important; } }

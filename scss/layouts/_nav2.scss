@@ -1,0 +1,90 @@
+
+/* -----------------------------------------------------------------------------
+
+  NAVBAR
+  
+----------------------------------------------------------------------------- */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $black;
+}
+
+.navbar-brand {
+  	font-family: 'PT Sans Narrow', sans-serif !important;
+  	font-size: 26px !important;
+    color: $black !important; 
+}
+
+.navbar {
+  border: none;
+  background: $white !important;
+}
+
+.nav {
+	a{
+		font-family: $nav-font-family;
+		color: $dark-grey !important;
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		padding-bottom: 24px !important;
+		padding-top: 20px !important;
+		:hover {
+			color: $green !important;	
+		}
+	}
+}
+
+/* -----------------------------------------------------------------------------
+
+  NEW ANIMATED 90 degree turn HAMBURGER CLASSES
+  
+----------------------------------------------------------------------------- */
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+  .top-bar {
+    -webkit-transform: translateX(6px) translateY(6px) rotateZ(90deg);
+    -ms-transform: translateX(6px) translateY(6px) rotateZ(90deg);
+    transform: translateX(6px) translateY(6px) rotateZ(90deg);
+  }
+  .middle-bar {
+    -webkit-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+  .bottom-bar {
+    -webkit-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
+    -ms-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
+    transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
+  }
+}
+
+// Add the “default” hamburger styles to fix that. 
+// These get activated and applied by default because the page usually loads 
+// with the menu collapsed and the .collapsed class already added
+
+.navbar-toggle.collapsed {
+  .top-bar {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  .middle-bar {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  .bottom-bar {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
