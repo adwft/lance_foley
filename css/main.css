@@ -104,7 +104,8 @@ h4 {
 
 h5 {
   font-family: "PT Sans", sans-serif;
-  font-size: 6em !important;
+  font-size: 7em !important;
+  line-height: 1em !important;
   color: white !important;
   font-weight: bold;
   margin-top: 10% !important;
