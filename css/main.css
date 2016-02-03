@@ -105,8 +105,8 @@ h4 {
 h5 {
   font-family: "PT Sans", sans-serif;
   font-size: 4em !important;
-  color: black !important;
-  font-weight: normal;
+  color: white !important;
+  font-weight: bold;
   margin-top: 30% !important;
   margin-bottom: 10px !important;
   margin-left: 0px !important; }
@@ -332,12 +332,41 @@ img.device {
 
 /* -----------------------------------------------------------------------------
 
+  NAVBAR BLACK
+  
+----------------------------------------------------------------------------- */
+.navbar-bl {
+  border: none;
+  background: white !important; }
+
+.navbar-brand-bl {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 26px !important;
+  color: black !important; }
+
+.navbar-default-bl .navbar-toggle-bl .icon-bar-bl {
+  background-color: black; }
+
+.nav-bl {
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.5px;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important; }
+  .nav-bl a:hover {
+    color: black !important; }
+  .nav-bl a:focus {
+    color: black !important; }
+  .nav-bl a:active {
+    color: black !important; }
+
+/* -----------------------------------------------------------------------------
+
   NAVBAR
   
 ----------------------------------------------------------------------------- */
 .navbar {
   border: none;
-  background: white !important; }
+  background: none !important; }
 
 .navbar-brand {
   font-family: "PT Sans Narrow", sans-serif;

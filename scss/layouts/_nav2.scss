@@ -4,33 +4,36 @@
   NAVBAR
   
 ----------------------------------------------------------------------------- */
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: $black;
-}
-
-.navbar-brand {
-  	font-family: 'PT Sans Narrow', sans-serif !important;
-  	font-size: 26px !important;
-    color: $black !important; 
-}
 
 .navbar {
   border: none;
   background: $white !important;
 }
 
+.navbar-brand {
+    font-family: $narrow-font-family;
+    font-size: 26px !important;
+    color: $black !important; 
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $black;
+}
+
 .nav {
-	a{
-		font-family: $nav-font-family;
-		color: $dark-grey !important;
-		font-size: 14px;
-		letter-spacing: 0.5px;
-		padding-bottom: 24px !important;
-		padding-top: 20px !important;
-		:hover {
-			color: $green !important;	
-		}
-	}
+  font-family: $nav-font-family;
+  letter-spacing: 0.5px;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+    a:hover{ 
+      color: $black !important; 
+    }
+    a:focus{
+      color: $black !important;     
+    }
+    a:active{
+      color: $black !important;     
+    }
 }
 
 /* -----------------------------------------------------------------------------
@@ -87,4 +90,17 @@
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+}
+
+// For Modals
+
+.top-bar-modal {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.bottom-bar-modal {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
