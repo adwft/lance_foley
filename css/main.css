@@ -104,12 +104,12 @@ h4 {
 
 h5 {
   font-family: "PT Sans", sans-serif;
-  font-size: 4em !important;
+  font-size: 6em !important;
   color: white !important;
   font-weight: bold;
-  margin-top: 30% !important;
+  margin-top: 10% !important;
   margin-bottom: 10px !important;
-  margin-left: 0px !important; }
+  margin-left: 1em !important; }
 
 h6 {
   font-family: "PT Serif", serif;
