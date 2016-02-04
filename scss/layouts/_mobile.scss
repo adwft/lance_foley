@@ -97,12 +97,35 @@
   }
 
   h5 {
-    font-size: 3em !important;
-    color: $black !important;
-    margin-top: 9% !important;
+  font-family: $reg-font-family;
+    font-size: 7em !important;
+    line-height: 1em !important;
+    color: $white !important;
+    font-weight: bold;
+    margin-top: 10% !important;
     margin-bottom: 10px !important;
-    margin-left: 0px !important;
-}
+    margin-left: 0 !important;
+    a:link{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
+  }
 
 h6 {
     font-size: 1.3em !important;
