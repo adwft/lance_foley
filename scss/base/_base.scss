@@ -82,6 +82,26 @@ h5 {
     margin-top: 10% !important;
     margin-bottom: 10px !important;
     margin-left: 1em !important;
+    a:link{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
 }
 
 h6 {

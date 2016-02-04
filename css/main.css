@@ -111,6 +111,21 @@ h5 {
   margin-top: 10% !important;
   margin-bottom: 10px !important;
   margin-left: 1em !important; }
+  h5 a:link {
+    color: white !important;
+    text-decoration: none; }
+  h5 a:hover {
+    color: white !important;
+    text-decoration: none; }
+  h5 a:focus {
+    color: white !important;
+    text-decoration: none; }
+  h5 a:visited {
+    color: white !important;
+    text-decoration: none; }
+  h5 a:active {
+    color: white !important;
+    text-decoration: none; }
 
 h6 {
   font-family: "PT Serif", serif;
