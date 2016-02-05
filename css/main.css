@@ -110,7 +110,7 @@ h5 {
   font-weight: bold;
   margin-top: 10% !important;
   margin-bottom: 10px !important;
-  margin-left: 20% !important; }
+  margin-left: 15% !important; }
   h5 a:link {
     color: white !important;
     text-decoration: none; }
@@ -302,7 +302,7 @@ a {
   position: relative;
   padding: 0 7% 5% 7%; }
   .list-unstyled.love li a:link {
-    color: #b0afaf !important;
+    color: black !important;
     font-style: normal;
     font-weight: normal; }
   .list-unstyled.love li a:hover {
@@ -459,7 +459,7 @@ img.device {
     float: left !important; }
 
   .nav {
-    font-size: 16px; }
+    font-size: 14px; }
     .nav li {
       margin: 0px 0; } }
 @media (max-width: 767px) {
@@ -523,11 +523,11 @@ img.device {
 
   h5 {
     font-family: "PT Sans", sans-serif;
-    font-size: 7em !important;
-    line-height: 1em !important;
+    font-size: 5em !important;
+    line-height: .80em !important;
     color: white !important;
     font-weight: bold;
-    margin-top: 10% !important;
+    margin-top: 5% !important;
     margin-bottom: 10px !important;
     margin-left: 0 !important; }
     h5 a:link {
