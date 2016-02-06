@@ -458,16 +458,34 @@ img.device {
     text-align: right;
     float: left !important; }
 
+  .pad-left {
+    padding-left: 5% !important; }
+
+  .pad-right {
+    padding-right: 5% !important; }
+
   .nav {
     font-size: 14px; }
     .nav li {
       margin: 0px 0; } }
+@media (max-width: 991px) {
+  .pad-left {
+    padding-left: 0px !important; }
+
+  .pad-right {
+    padding-right: 0px !important; } }
 @media (max-width: 767px) {
   .image-left {
     height: 50%;
     width: 50%;
     float: left !important;
     padding: 0 10px 0 0px !important; }
+
+  .pad-left {
+    padding-left: 0px !important; }
+
+  .pad-right {
+    padding-left: 0px !important; }
 
   .text-left {
     padding: 2em 0 0 0 !important; }

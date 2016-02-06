@@ -8,6 +8,14 @@
     float: left !important;
 }
 
+  .pad-left{
+  padding-left: 5% !important;
+  }
+
+  .pad-right{
+  padding-right: 5% !important;
+  }
+
   .nav {
     font-size: 14px;
       li{
@@ -15,6 +23,18 @@
       }
   }
 }
+
+// Mobile Media Queries For Tablets
+@media(max-width:991px){
+  .pad-left{
+  padding-left: 0px !important;
+  }
+
+  .pad-right{
+  padding-right: 0px !important;
+  }
+}
+
 // Small Sizes
 @media(max-width:767px){
 
@@ -23,6 +43,14 @@
       width: 50%;
       float: left !important;
       padding: 0 10px 0 0px !important;
+  }
+
+  .pad-left{
+  padding-left: 0px !important;
+  }
+
+  .pad-right{
+  padding-left: 0px !important;
   }
 
   .text-left {
