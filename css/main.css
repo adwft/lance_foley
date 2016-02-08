@@ -8,6 +8,10 @@
   padding-top: 40px;
   padding-bottom: 40px; }
 
+.extra-pad-proj {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
 .extra-pad-top {
   padding-top: 40px; }
 
@@ -224,7 +228,9 @@ h6 {
   letter-spacing: 0.02em;
   padding-bottom: 0px !important;
   padding-top: 0px !important;
+  min-height: 100%;
   overflow: hidden;
+  box-shadow: none;
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important; }
