@@ -47,8 +47,12 @@ h6 {
 // Small Sizes
 @media(max-width:767px){
 
-  .collapsing, .in {
-    background-color: #ffffff;
+  .collapsing {
+    background-color: rgba(255,255,255,0.6);
+  }
+
+  .navbar {
+    background-color: rgba(255,255,255,0.6);
   }
 
   .image-left{
@@ -142,16 +146,11 @@ h6 {
   }
 
   h4 {
-    font-family: $reg-font-family;
-    font-size: 2em !important;
-    color: $black !important;
-    font-weight: normal !important;
-    margin-top: 10px !important;
-    margin-bottom: 5px !important;
+    text-align: left
   }
 
   h5 {
-  font-family: $reg-font-family;
+    font-family: $reg-font-family;
     font-size: 5em !important;
     line-height: .80em !important;
     color: $white !important;

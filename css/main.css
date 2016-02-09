@@ -52,6 +52,14 @@
   -o-background-size: cover;
   background-size: cover; }
 
+.body3 {
+  margin: 0;
+  background: #b0afaf no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .body-about {
   margin: 0;
   background: url("../img/bg/lance3_2800x1867.jpg") no-repeat center center fixed;
@@ -125,7 +133,7 @@ h3 {
     color: #b0afaf !important;
     font-style: italic;
     font-weight: normal;
-    font-size: 16px !important; }
+    font-size: 28px !important; }
   h3 a:hover {
     color: black !important;
     text-decoration: none; }
@@ -137,12 +145,27 @@ h3 {
     text-decoration: none; }
 
 h4 {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px !important;
+  font-family: "PT Serif", serif;
+  font-size: 28px !important;
+  line-height: 1.2em;
+  text-align: center;
   color: black !important;
-  font-weight: bold;
-  margin-top: 10px !important;
-  margin-bottom: 10px !important; }
+  font-weight: normal;
+  margin-top: 10px !important; }
+  h4 a:link {
+    color: black !important;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 28px !important; }
+  h4 a:hover {
+    color: black !important;
+    text-decoration: none; }
+  h4 a:focus {
+    color: black !important;
+    text-decoration: none; }
+  h4 a:active {
+    color: black !important;
+    text-decoration: none; }
 
 h5 {
   font-family: "PT Sans", sans-serif;
@@ -470,7 +493,7 @@ img.device {
 ----------------------------------------------------------------------------- */
 .navbar {
   border: none;
-  background: none !important; }
+  background: none; }
 
 .navbar-brand {
   font-family: "PT Sans Narrow", sans-serif;
@@ -574,8 +597,11 @@ h6 {
   margin-right: 15px !important; }
 
 @media (max-width: 767px) {
-  .collapsing, .in {
-    background-color: #ffffff; }
+  .collapsing {
+    background-color: rgba(255, 255, 255, 0.6); }
+
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.6); }
 
   .image-left {
     height: 50%;
@@ -645,12 +671,7 @@ h6 {
     display: none; }
 
   h4 {
-    font-family: "PT Sans", sans-serif;
-    font-size: 2em !important;
-    color: black !important;
-    font-weight: normal !important;
-    margin-top: 10px !important;
-    margin-bottom: 5px !important; }
+    text-align: left; }
 
   h5 {
     font-family: "PT Sans", sans-serif;

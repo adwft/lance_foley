@@ -9,6 +9,15 @@
      background-size: cover;
 }
 
+.body3 {
+     margin: 0;
+     background: $lt-grey no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
 .body-about {
      margin: 0;
      background: url('../img/bg/lance3_2800x1867.jpg') no-repeat center center fixed;
@@ -87,7 +96,7 @@ h3 {
       color: $lt-grey !important;
       font-style: italic;
       font-weight: normal;
-      font-size: 16px !important;
+      font-size: 28px !important;
     }
     a:hover{ 
       color: $black !important;
@@ -104,12 +113,31 @@ h3 {
 }
 
 h4 {
-	font-family: $reg-font-family;
-    font-size: 16px !important;
+	font-family: $serif-font-family;
+    font-size: 28px !important;
+    line-height: 1.2em;
+    text-align: center;
     color: $black !important;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    a:link{ 
+      color: $black !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 28px !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
 }
 
 h5 {
