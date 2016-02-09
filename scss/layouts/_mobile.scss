@@ -35,8 +35,21 @@
   }
 }
 
+h6 {
+    font-size: 1.3em !important;
+    line-height: 1.6em !important;
+    font-style: italic;
+    margin-top: 10px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
 // Small Sizes
 @media(max-width:767px){
+
+  .collapsing, .in {
+    background-color: #ffffff;
+  }
 
   .image-left{
      height: 50%;
@@ -98,6 +111,14 @@
   .device {
     display: block;
     margin: 20px auto 0 auto;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow:none !important;
+      a:focus{
+        border: 0 !important;
+        outline: none !important;
+        box-shadow:none !important;
+      }
   }
 
   .device-small {
@@ -105,10 +126,19 @@
   }
 
   .nav {
-    font-size: 2em;
+    font-size: 4em;
+    line-height: 2em !important;
       li{
-        margin: 20px 0;
+        margin: 40px 0;
       }
+  }
+  
+  h2 {
+    margin-bottom: 20px !important;
+  }
+
+  h3 {
+    display: none;
   }
 
   h4 {
@@ -118,10 +148,6 @@
     font-weight: normal !important;
     margin-top: 10px !important;
     margin-bottom: 5px !important;
-  }
-
-  h1 {
-    padding-top: 30px;
   }
 
   h5 {

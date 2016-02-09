@@ -36,7 +36,7 @@
             <span class="icon-bar middle-bar"></span>
             <span class="icon-bar bottom-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">LANCE FOLEY</a>
+          <a class="navbar-brand" href="index.html"><strong>LANCE FOLEY</strong></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,7 +66,8 @@
      <section>
        <div class="container">
 
-         <div class="row">
+
+        <div class="row">
             <div class="col-md-1"></div>
             <div class="col-xs-12 col-sm-6 col-md-5 list-new extra-pad-top">
               <div class="image-left pad-right">
@@ -82,12 +83,15 @@
                   <a href="projects-ecoh.html" name="ecoh"><img class="device" src="img/ecohsign2.jpg"></a>
               </div>
               <div class="text-left pad-left">
-                  <p><a href="projects-ecoh.html"><strong>Ecoh Ecoh Xue</strong></a> <br>
-                  <a class="new" href="projects-ecoh.html"><strong>Identity, Branding & Art Direction</strong></a></p>
+                  <p><a href="projects-ecoh.html"><strong>Ecoh Ecoh Xue</strong></a>
+                  <a class="new" href="projects-ecoh.html"> 
+                  <br><strong>Identity, Branding & Art Direction</strong></a>
+                  </p>
               </div>
-            </div>
-            <div class="col-md-1"></div> 
+            </div> 
+            <div class="col-md-1"></div>
         </div>
+
 
 
         <div class="row">
@@ -389,12 +393,47 @@
       </div>
     </section>  
 
-      
+    
+    <!-- Floating Back Button -->
+    <!-- <div class="scroll-top-wrapper ">
+      <span class="scroll-top-inner">
+        <h4>BACK</h4>
+      </span>
+    </div> -->
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Floating Back Button Script-->
+    <script>
+
+    $(function(){
+     
+      $(document).on( 'scroll', function(){
+     
+        if ($(window).scrollTop() > 5) {
+          $('.scroll-top-wrapper').addClass('show');
+        } else {
+          $('.scroll-top-wrapper').removeClass('show');
+        }
+      });
+     
+      $('.scroll-top-wrapper').on('click', scrollToTop);
+    });
+     
+    function scrollToTop() {
+      verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+      element = $('body');
+      offset = element.offset();
+      offsetTop = offset.top;
+      $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+    }
+    </script>
 
   </body>
 </html>
