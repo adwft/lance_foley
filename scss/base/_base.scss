@@ -11,7 +11,7 @@
 
 .body3 {
      margin: 0;
-     background: $lt-grey no-repeat center center fixed;
+     background: $black no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -27,6 +27,33 @@
      background-size: cover;
 }
 
+.intro {
+    font-family: $serif-font-family;
+    font-size: 28px !important;
+    line-height: 1.2em;
+    text-align: center;
+    color: $white !important;
+    font-weight: normal;
+    margin-top: 10px !important;
+    a:link{ 
+      color: $white !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 28px !important;
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
+}
 
 /* Back button */
 /*.scroll-top-wrapper {
@@ -73,6 +100,17 @@ h1 {
     color: $black !important;
     margin-top: 10px !important;
     margin-bottom: 5px !important;
+}
+
+.large {
+    font-family: $reg-font-family;
+    font-size: 5em !important;
+    line-height: .80em !important;
+    color: $black !important;
+    font-weight: bold;
+    margin-top: 5% !important;
+    margin-bottom: 10px !important;
+    margin-left: 0 !important;
 }
 
 h2 {
@@ -286,37 +324,47 @@ h6 {
     }
 }
 
-.modal-content {
+.main-copy-2 {
   font-family: $serif-font-family;
+  color: $black !important;
+  font-size: 1.4em;
   letter-spacing: 0.02em;
   padding-bottom: 0px !important;
   padding-top: 0px !important;
-  min-height: 100%;
   overflow: hidden;
-  box-shadow: none;
-  -webkit-border-radius: 0px !important;
-  -moz-border-radius: 0px !important;
-  border-radius: 0px !important; 
-  	a:link{ 
+    a:link{ 
       color: $lt-grey !important;
       font-style: italic;
       font-weight: normal;
       font-size: 1.4em;
-      padding-top: 20px !important;
-      margin-top: 20px !important;
     }
     a:hover{ 
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none; 
     }
     a:focus{
-      color: $black !important;
+      color: $lt-grey !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $lt-grey !important;
       text-decoration: none;     
     }
     a:active{
-     color: $black !important; 
+     color: $lt-grey !important; 
      text-decoration: none;    
     }
+}
+
+.main-copy-3 {
+  font-family: $serif-font-family;
+  color: $black !important;
+  font-size: 28px !important;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden;
 }
 
 .project-style {

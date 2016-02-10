@@ -6,7 +6,7 @@
   .side-copy {
     text-align: right;
     float: left !important;
-}
+  }
 
   .pad-left{
   padding-left: 15% !important;
@@ -14,6 +14,10 @@
 
   .pad-right{
   padding-right: 15% !important;
+  }
+
+  .kill {
+    display: none;
   }
 
   .nav {
@@ -47,8 +51,12 @@ h6 {
 // Small Sizes
 @media(max-width:767px){
 
-  .collapsing {
-    background-color: rgba(255,255,255,0.6);
+//   .collapsing {
+//     background-color: rgba(255,255,255,0.6);
+//   }
+
+  #custom-nav {
+    background-color: rgba(0,0,0,0.8);
   }
 
   .navbar {
@@ -146,7 +154,7 @@ h6 {
   }
 
   h4 {
-    text-align: left
+    text-align: left;
   }
 
   h5 {
@@ -179,6 +187,12 @@ h6 {
      text-decoration: none;    
     }
   }
+
+#adjust {
+  font-size: 4vw;
+  align: center;
+  text-align: center;
+}
 
 h6 {
     font-size: 1.3em !important;

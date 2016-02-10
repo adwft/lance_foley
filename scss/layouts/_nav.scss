@@ -5,35 +5,51 @@
   
 ----------------------------------------------------------------------------- */
 
-.navbar-bl {
+#custom-navbar {
   border: none;
-  background: $white !important;
+  background: none;
 }
 
-.navbar-brand-bl {
+#custom-navbar-brand {
     font-family: $narrow-font-family;
     font-size: 26px !important;
-    color: $black !important; 
+    color: $white !important; 
 }
 
-.navbar-default-bl .navbar-toggle-bl .icon-bar-bl {
-    background-color: $black;
-}
-
-.nav-bl {
+#custom-nav {
   font-family: $nav-font-family;
   letter-spacing: 0.5px;
   padding-bottom: 0px !important;
   padding-top: 0px !important;
+    a:link{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
     a:hover{ 
-      color: $black !important; 
+      color: $white !important; 
     }
     a:focus{
-      color: $black !important;     
+      color: $white !important;     
     }
     a:active{
-      color: $black !important;     
+      color: $white !important;     
     }
+}
+
+#custom-nav2>li>a {
+  color: $white !important;
+}
+
+#white-icon {
+  background-color: $white;
+}
+
+#white-icon2 {
+  background-color: $white;
+}
+
+#white-icon3 {
+  background-color: $white;
 }
 
 /* -----------------------------------------------------------------------------
