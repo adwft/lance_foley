@@ -6,23 +6,76 @@
   .side-copy {
     text-align: right;
     float: left !important;
-}
+  }
+
+  .pad-left{
+  padding-left: 15% !important;
+  }
+
+  .pad-right{
+  padding-right: 15% !important;
+  }
+
+  .kill {
+    display: none;
+  }
 
   .nav {
-    font-size: 16px;
+    font-size: 14px;
       li{
         margin: 0px 0;
       }
   }
 }
+
+// Mobile Media Queries For Tablets
+@media(max-width:991px){
+  .pad-left{
+  padding-left: 10% !important;
+  }
+
+  .pad-right{
+  padding-right: 10% !important;
+  }
+}
+
+h6 {
+    font-size: 1.3em !important;
+    line-height: 1.6em !important;
+    font-style: italic;
+    margin-top: 10px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
 // Small Sizes
 @media(max-width:767px){
+
+//   .collapsing {
+//     background-color: rgba(255,255,255,0.6);
+//   }
+
+  #custom-nav {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .navbar {
+    background-color: rgba(255,255,255,0.6);
+  }
 
   .image-left{
      height: 50%;
       width: 50%;
       float: left !important;
       padding: 0 10px 0 0px !important;
+  }
+
+  .pad-left{
+  padding-left: 0px !important;
+  }
+
+  .pad-right{
+  padding-left: 0px !important;
   }
 
   .text-left {
@@ -70,6 +123,14 @@
   .device {
     display: block;
     margin: 20px auto 0 auto;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow:none !important;
+      a:focus{
+        border: 0 !important;
+        outline: none !important;
+        box-shadow:none !important;
+      }
   }
 
   .device-small {
@@ -77,31 +138,60 @@
   }
 
   .nav {
-    font-size: 2em;
+    font-size: 4em;
+    line-height: 2em !important;
       li{
-        margin: 20px 0;
+        margin: 40px 0;
       }
+  }
+  
+  h2 {
+    margin-bottom: 20px !important;
+  }
+
+  h3 {
+    display: none;
   }
 
   h4 {
-    font-family: $reg-font-family;
-    font-size: 2em !important;
-    color: $black !important;
-    font-weight: normal !important;
-    margin-top: 10px !important;
-    margin-bottom: 5px !important;
-  }
-
-  h1 {
-    padding-top: 30px;
+    text-align: left;
   }
 
   h5 {
-    font-size: 3em !important;
-    color: $black !important;
-    margin-top: 9% !important;
+    font-family: $reg-font-family;
+    font-size: 5em !important;
+    line-height: .80em !important;
+    color: $white !important;
+    font-weight: bold;
+    margin-top: 5% !important;
     margin-bottom: 10px !important;
-    margin-left: 0px !important;
+    margin-left: 0 !important;
+    a:link{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
+  }
+
+#adjust {
+  font-size: 4vw;
+  align: center;
+  text-align: center;
 }
 
 h6 {

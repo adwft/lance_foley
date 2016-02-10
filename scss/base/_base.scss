@@ -9,6 +9,15 @@
      background-size: cover;
 }
 
+.body3 {
+     margin: 0;
+     background: $black no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
 .body-about {
      margin: 0;
      background: url('../img/bg/lance3_2800x1867.jpg') no-repeat center center fixed;
@@ -18,28 +27,105 @@
      background-size: cover;
 }
 
+.intro {
+    font-family: $serif-font-family;
+    font-size: 28px !important;
+    line-height: 1.2em;
+    text-align: center;
+    color: $white !important;
+    font-weight: normal;
+    margin-top: 10px !important;
+    a:link{ 
+      color: $white !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 28px !important;
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
+}
+
+/* Back button */
+/*.scroll-top-wrapper {
+  position: fixed;
+  opacity: 0.7;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eeeeee;
+  width: 90px;
+  height: 90px;
+  line-height: 48px;
+  right: 30px;
+  bottom: 30px;
+  padding-top: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+  background-color: rgba(0, 230, 0, 0.5);
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+  opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+  line-height: inherit;
+} */
+/* END Back button */
 
 h1 {
-	font-family: $narrow-font-family;
-    font-size: 24px !important;
+	font-family: $reg-font-family;
+    font-size: 30px !important;
     color: $black !important;
     margin-top: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+.large {
+    font-family: $reg-font-family;
+    font-size: 5em !important;
+    line-height: .80em !important;
+    color: $black !important;
+    font-weight: bold;
+    margin-top: 5% !important;
     margin-bottom: 10px !important;
+    margin-left: 0 !important;
 }
 
 h2 {
 	font-family: $reg-font-family;
-    font-size: 16px !important;
-    color: $black !important;
+    font-size: 30px !important;
+    color: $lt-grey !important;
     font-weight: bold;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: 5px !important;
+    margin-bottom: 50px !important;
     margin-left: 0px !important;
 }
 
 h3 {
 	font-family: $serif-font-family;
-    font-size: 16px !important;
+    font-size: 28px !important;
     line-height: 1.2em;
     color: $black !important;
     font-weight: normal;
@@ -48,7 +134,7 @@ h3 {
       color: $lt-grey !important;
       font-style: italic;
       font-weight: normal;
-      font-size: 16px !important;
+      font-size: 28px !important;
     }
     a:hover{ 
       color: $black !important;
@@ -65,22 +151,62 @@ h3 {
 }
 
 h4 {
-	font-family: $reg-font-family;
-    font-size: 16px !important;
+	font-family: $serif-font-family;
+    font-size: 28px !important;
+    line-height: 1.2em;
+    text-align: center;
     color: $black !important;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    a:link{ 
+      color: $black !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 28px !important;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
 }
 
 h5 {
 	font-family: $reg-font-family;
-    font-size: 4em !important;
-    color: $black !important;
-    font-weight: normal;
-    margin-top: 30% !important;
+    font-size: 7em !important;
+    line-height: 1em !important;
+    color: $white !important;
+    font-weight: bold;
+    margin-top: 10% !important;
     margin-bottom: 10px !important;
-    margin-left: 0px !important;
+    margin-left: 15% !important;
+    a:link{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:visited{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
 }
 
 h6 {
@@ -91,6 +217,42 @@ h6 {
     opacity: 0.5;
     font-style: italic;
     margin-top: 10px !important;
+}
+
+.new {
+  color: $lt-grey !important;
+  font-family: $reg-font-family;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important; 
+    a:link{ 
+      color: $lt-grey !important;
+      font-style: none;
+      font-weight: normal;
+      font-size: 16px;
+      padding-top: 20px !important;
+      margin-top: 20px !important;
+    }
+    a:hover{ 
+      color: $lt-grey !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $lt-grey !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $lt-grey !important; 
+     text-decoration: none;    
+    }
+    a:visited{
+      color: $lt-grey !important;
+      text-decoration: none; 
+    }
 }
 
 .about-text {
@@ -145,52 +307,64 @@ h6 {
       font-size: 1.4em;
     }
     a:hover{ 
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none; 
     }
     a:focus{
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none;     
     }
      a:visited{
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none;     
     }
     a:active{
-     color: $black !important; 
+     color: $lt-grey !important; 
      text-decoration: none;    
     }
 }
 
-.modal-content {
+.main-copy-2 {
   font-family: $serif-font-family;
+  color: $black !important;
+  font-size: 1.4em;
   letter-spacing: 0.02em;
   padding-bottom: 0px !important;
   padding-top: 0px !important;
   overflow: hidden;
-  -webkit-border-radius: 0px !important;
-  -moz-border-radius: 0px !important;
-  border-radius: 0px !important; 
-  	a:link{ 
+    a:link{ 
       color: $lt-grey !important;
       font-style: italic;
       font-weight: normal;
       font-size: 1.4em;
-      padding-top: 20px !important;
-      margin-top: 20px !important;
     }
     a:hover{ 
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none; 
     }
     a:focus{
-      color: $black !important;
+      color: $lt-grey !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $lt-grey !important;
       text-decoration: none;     
     }
     a:active{
-     color: $black !important; 
+     color: $lt-grey !important; 
      text-decoration: none;    
     }
+}
+
+.main-copy-3 {
+  font-family: $serif-font-family;
+  color: $black !important;
+  font-size: 28px !important;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden;
 }
 
 .project-style {
@@ -273,8 +447,16 @@ body {
 }
 
 a {
-	color: $lt-grey;
+	color: $black;
 	letter-spacing: 0.5px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+    a:focus{
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
 		.lurge-link:link{
 			font-size: 24px;
 			font-style: italic;
@@ -284,9 +466,27 @@ a {
 			font-style: italic;
 			color: $black;
 		}
+    .grey{
+      color: $lt-grey;
+      letter-spacing: 0.5px;
+    }
 }
 
-//
+a img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+    a:focus{
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+}
+
+img.device{
+  width: 100%;
+  border-style: none;
+}
 //
 //
 //
@@ -310,7 +510,7 @@ a {
 	//}
 
 	a:link{ 
-      color: $lt-grey !important;
+      color: $black !important;
       font-style: normal;
       font-weight: normal;
     }
@@ -339,7 +539,7 @@ a {
 	//}
 
 	a:link{ 
-      color: $lt-grey !important;
+      color: $black !important;
       font-style: normal;
       font-weight: normal;
     }
@@ -347,14 +547,7 @@ a {
       color: $black !important;
       text-decoration: none; 
     }
-    a:focus{
-      color: $black !important;
-      text-decoration: none;     
-    }
-    a:active{
-     color: $black !important; 
-     text-decoration: none;    
-    }
+    
 }
 
 //
@@ -369,6 +562,4 @@ a {
 }
 
 // Image 
-img.device{
-	width: 100%;
-}
+

@@ -1,13 +1,66 @@
 
 /* -----------------------------------------------------------------------------
 
+  NAVBAR BLACK
+  
+----------------------------------------------------------------------------- */
+
+#custom-navbar {
+  border: none;
+  background: none;
+}
+
+#custom-navbar-brand {
+    font-family: $narrow-font-family;
+    font-size: 26px !important;
+    color: $white !important; 
+}
+
+#custom-nav {
+  font-family: $nav-font-family;
+  letter-spacing: 0.5px;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+    a:link{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:hover{ 
+      color: $white !important; 
+    }
+    a:focus{
+      color: $white !important;     
+    }
+    a:active{
+      color: $white !important;     
+    }
+}
+
+#custom-nav2>li>a {
+  color: $white !important;
+}
+
+#white-icon {
+  background-color: $white;
+}
+
+#white-icon2 {
+  background-color: $white;
+}
+
+#white-icon3 {
+  background-color: $white;
+}
+
+/* -----------------------------------------------------------------------------
+
   NAVBAR
   
 ----------------------------------------------------------------------------- */
 
 .navbar {
   border: none;
-  background: $white !important;
+  background: none;
 }
 
 .navbar-brand {
@@ -34,6 +87,10 @@
     a:active{
       color: $black !important;     
     }
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: $black !important;
 }
 
 /* -----------------------------------------------------------------------------
