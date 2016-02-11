@@ -234,9 +234,35 @@ h6 {
   font-style: italic;
   margin-top: 10px !important; }
 
+.list-new {
+  font-family: "PT Sans", sans-serif;
+  color: black !important;
+  text-decoration: none !important; }
+  .list-new a:link {
+    color: black !important;
+    font-style: none;
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 20px !important;
+    margin-top: 20px !important;
+    text-decoration: none !important; }
+  .list-new a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .list-new a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .list-new a:active {
+    color: black !important;
+    text-decoration: none; }
+  .list-new a:visited {
+    color: black !important;
+    text-decoration: none; }
+
 .new {
   color: #b0afaf !important;
   font-family: "PT Sans", sans-serif;
+  text-decoration: none !important;
   letter-spacing: 0.02em;
   padding-bottom: 0px !important;
   padding-top: 0px !important;
@@ -478,16 +504,6 @@ img.device {
     text-decoration: none; }
 
 /* ======= change the no-love image ========== */
-.list-new {
-  font-family: "PT Sans", sans-serif; }
-  .list-new a:link {
-    color: #ff0000 !important;
-    font-style: normal;
-    font-weight: normal; }
-  .list-new a:hover {
-    color: #ff0000 !important;
-    text-decoration: none; }
-
 .jumbotron {
   height: 100%;
   background-image: url("../img/one.jpg");
