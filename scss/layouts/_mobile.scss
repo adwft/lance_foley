@@ -3,10 +3,6 @@
 
 // Mobile Media Queries For Tablets and above
 @media(min-width:768px){
-  .side-copy {
-    text-align: right;
-    float: left !important;
-  }
 
   .pad-left{
   padding-left: 15% !important;
@@ -94,9 +90,15 @@ h6 {
     padding-top: 0px !important;
   }
 
-  .extra-pad-top2 {
-    padding-top: 20px !important;
-  }
+  .extra-pad-top2{
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+.extra-pad-proj{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
   .list-unstyled.love {
    
@@ -155,40 +157,71 @@ h6 {
 
   h4 {
     text-align: left;
+    font-size: 2em !important;
+    margin-left: 0px !important;
   }
 
   h5 {
     font-family: $reg-font-family;
     font-size: 5em !important;
     line-height: .80em !important;
-    color: $white !important;
+    color: $black !important;
     font-weight: bold;
     margin-top: 5% !important;
     margin-bottom: 10px !important;
     margin-left: 0 !important;
     a:link{ 
-      color: $white !important;
+      color: $black !important;
       text-decoration: none; 
     }
     a:hover{ 
-      color: $white !important;
+      color: $black !important;
       text-decoration: none; 
     }
     a:focus{
-      color: $white !important;
+      color: $black !important;
       text-decoration: none;     
     }
      a:visited{
-      color: $white !important;
+      color: $black !important;
       text-decoration: none;     
     }
     a:active{
-     color: $white !important; 
+     color: $black !important; 
      text-decoration: none;    
     }
   }
 
-#adjust {
+// Begin Footer Styles
+.lil-kill {
+  display: none;
+}
+
+.extra-pad-footer {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+.side-copy {
+  font-size: 3em;
+  font-family: $reg-font-family;
+  line-height: .9em;
+  align: left;
+  padding-bottom: 15px;
+  margin-bottom: 15px; 
+}
+
+.side-copy-2 {
+  font-size: 1.5em;
+  font-family: $reg-font-family;
+  line-height: 1.3em;
+  align: left;
+  padding-top: 4px;
+  margin-left: 3%;
+  margin-right: 2%;
+}
+
+ #adjust {
   font-size: 4vw;
   align: center;
   text-align: center;
@@ -202,7 +235,4 @@ h6 {
     margin-right: 15px !important;
 }
 
-  //.side-copy {
-   // align: left;
-  //}
 }

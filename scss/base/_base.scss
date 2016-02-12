@@ -151,10 +151,10 @@ h3 {
 }
 
 h4 {
-	font-family: $serif-font-family;
-    font-size: 28px !important;
-    line-height: 1.2em;
-    text-align: center;
+	  font-family: $reg-font-family;
+    font-size: 3em !important;
+    line-height: 1em;
+    text-align: left;
     color: $black !important;
     font-weight: normal;
     margin-top: 10px !important;
@@ -182,29 +182,29 @@ h5 {
 	font-family: $reg-font-family;
     font-size: 7em !important;
     line-height: 1em !important;
-    color: $white !important;
+    color: $black !important;
     font-weight: bold;
     margin-top: 10% !important;
     margin-bottom: 10px !important;
     margin-left: 15% !important;
     a:link{ 
-      color: $white !important;
+      color: $black !important;
       text-decoration: none; 
     }
     a:hover{ 
-      color: $white !important;
+      color: $black !important;
       text-decoration: none; 
     }
     a:focus{
-      color: $white !important;
+      color: $black !important;
       text-decoration: none;     
     }
     a:visited{
-      color: $white !important;
+      color: $black !important;
       text-decoration: none;     
     }
     a:active{
-     color: $white !important; 
+     color: $black !important; 
      text-decoration: none;    
     }
 }
@@ -288,6 +288,38 @@ h6 {
     }
 }
 
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn-primary {
+  background-color: $black;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-circle, .btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 5px 4px 8px;
+  font-size: 18px;
+  line-height: 16px;
+  border-radius: 25px;
+  background-color: $black;
+  text-align: center;
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
+}
+
 .about-text {
 	font-family: $reg-font-family;
     font-size: 2em !important;
@@ -325,6 +357,68 @@ h6 {
     font-size: 16px !important;
     color: $black !important;
     font-weight: bold;
+}
+
+.footer-top {
+  text-align: center;
+  font-family: $serif-font-family;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden;
+    a:link{ 
+      color: $white !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.4em;
+    }
+    a:hover{ 
+      color: $white !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $white !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $white !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $white !important; 
+     text-decoration: none;    
+    }
+}
+
+.footer-back {
+  text-align: center;
+  font-family: $serif-font-family;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden;
+    a:link{ 
+      color: $black !important;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 2em;
+    }
+    a:hover{ 
+      color: $black !important;
+      text-decoration: none; 
+    }
+    a:focus{
+      color: $black !important;
+      text-decoration: none;     
+    }
+     a:visited{
+      color: $black !important;
+      text-decoration: none;     
+    }
+    a:active{
+     color: $black !important; 
+     text-decoration: none;    
+    }
 }
 
 .main-copy {
@@ -389,16 +483,6 @@ h6 {
     }
 }
 
-.main-copy-3 {
-  font-family: $serif-font-family;
-  color: $black !important;
-  font-size: 28px !important;
-  line-height: 1.2em;
-  letter-spacing: 0.02em;
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
-  overflow: hidden;
-}
 
 .project-style {
   font-family: $reg-font-family;
@@ -448,29 +532,48 @@ h6 {
 }
 
 .side-copy {
-  font-family: $serif-font-family;
-  letter-spacing: 0.02em;
-  padding-bottom: 0px !important;
+  font-size: 4.8em;
+  font-family: $reg-font-family;
+  line-height: .9em;
+  align: left;
+  padding-bottom: 15px !important;
   padding-top: 0px !important;
-  	a:link{ 
+  border-bottom: thin solid #000000;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.side-copy-2 {
+  font-size: 1.6em;
+  font-family: $reg-font-family;
+  line-height: 1.4em;
+  align: left;
+  padding-bottom: 0px !important;
+  padding-top: 13px !important;
+  padding-left: 2% !important;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+    a:link{ 
       color: $lt-grey !important;
-      font-style: italic;
+      font-style: normal;
       font-weight: normal;
-      font-size: 1.4em;
     }
     a:hover{ 
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none; 
     }
     a:focus{
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none;     
     }
     a:active{
-     color: $black !important; 
+     color: $lt-grey !important; 
      text-decoration: none;    
     }
-}
+} 
 
 body {
 	font-family: $serif-font-family;
@@ -524,9 +627,14 @@ img.device{
 //
 //
 // Lists
+.extra-pad-top2{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-.extra-pad-left{
- 	padding-left: 0px !important;
+.extra-pad-footer {
+ 	padding-top: 80px !important;
+  padding-bottom: 80px !important;
  }
 
 .extra-pad-right{
@@ -573,5 +681,36 @@ img.device{
 	background-size: cover;
 }
 
-// Image 
+// IcoMoon Font 
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?6pxcm3');
+    src:    url('../fonts/icomoon.eot?6pxcm3#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?6pxcm3') format('truetype'),
+        url('../fonts/icomoon.woff?6pxcm3') format('woff'),
+        url('../fonts/icomoon.svg?6pxcm3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+    content: "\e900";
+}
+.icon-mail2:before {
+    content: "\e901";
+}

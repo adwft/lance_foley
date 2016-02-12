@@ -15,13 +15,9 @@
 .extra-pad-top {
   padding-top: 40px; }
 
-.extra-pad-top2 {
-  padding-top: 20px;
-  margin-top: 20px; }
-
 .extra-pad-bottom {
-  padding-bottom: 40px;
-  margin-bottom: 40px; }
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
 
 .space-pad {
   padding-bottom: 20px;
@@ -42,6 +38,10 @@
 
 .margin-left {
   margin-left: 30px; }
+
+.pad-foot {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 /* _base.scss */
 .body2 {
@@ -178,10 +178,10 @@ h3 {
     text-decoration: none; }
 
 h4 {
-  font-family: "PT Serif", serif;
-  font-size: 28px !important;
-  line-height: 1.2em;
-  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 3em !important;
+  line-height: 1em;
+  text-align: left;
   color: black !important;
   font-weight: normal;
   margin-top: 10px !important; }
@@ -204,25 +204,25 @@ h5 {
   font-family: "PT Sans", sans-serif;
   font-size: 7em !important;
   line-height: 1em !important;
-  color: white !important;
+  color: black !important;
   font-weight: bold;
   margin-top: 10% !important;
   margin-bottom: 10px !important;
   margin-left: 15% !important; }
   h5 a:link {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
   h5 a:hover {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
   h5 a:focus {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
   h5 a:visited {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
   h5 a:active {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
 
 h6 {
@@ -291,6 +291,32 @@ h6 {
     color: #b0afaf !important;
     text-decoration: none; }
 
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn-primary {
+  background-color: black; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-circle, .btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 5px 4px 8px;
+  font-size: 18px;
+  line-height: 16px;
+  border-radius: 25px;
+  background-color: black;
+  text-align: center; }
+  .btn-primary:hover a:hover, .btn-primary:focus a:hover, .btn-primary:active a:hover, .btn-primary.active a:hover, .btn-circle a:hover, .btn-lg a:hover {
+    color: white !important;
+    text-decoration: none; }
+  .btn-primary:hover a:focus, .btn-primary:focus a:focus, .btn-primary:active a:focus, .btn-primary.active a:focus, .btn-circle a:focus, .btn-lg a:focus {
+    color: white !important;
+    text-decoration: none; }
+  .btn-primary:hover a:visited, .btn-primary:focus a:visited, .btn-primary:active a:visited, .btn-primary.active a:visited, .btn-circle a:visited, .btn-lg a:visited {
+    color: white !important;
+    text-decoration: none; }
+  .btn-primary:hover a:active, .btn-primary:focus a:active, .btn-primary:active a:active, .btn-primary.active a:active, .btn-circle a:active, .btn-lg a:active {
+    color: white !important;
+    text-decoration: none; }
+
 .about-text {
   font-family: "PT Sans", sans-serif;
   font-size: 2em !important;
@@ -322,6 +348,56 @@ h6 {
   font-size: 16px !important;
   color: black !important;
   font-weight: bold; }
+
+.footer-top {
+  text-align: center;
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden; }
+  .footer-top a:link {
+    color: white !important;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.4em; }
+  .footer-top a:hover {
+    color: white !important;
+    text-decoration: none; }
+  .footer-top a:focus {
+    color: white !important;
+    text-decoration: none; }
+  .footer-top a:visited {
+    color: white !important;
+    text-decoration: none; }
+  .footer-top a:active {
+    color: white !important;
+    text-decoration: none; }
+
+.footer-back {
+  text-align: center;
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.02em;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  overflow: hidden; }
+  .footer-back a:link {
+    color: black !important;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2em; }
+  .footer-back a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .footer-back a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .footer-back a:visited {
+    color: black !important;
+    text-decoration: none; }
+  .footer-back a:active {
+    color: black !important;
+    text-decoration: none; }
 
 .main-copy {
   font-family: "PT Serif", serif;
@@ -373,16 +449,6 @@ h6 {
     color: #b0afaf !important;
     text-decoration: none; }
 
-.main-copy-3 {
-  font-family: "PT Serif", serif;
-  color: black !important;
-  font-size: 28px !important;
-  line-height: 1.2em;
-  letter-spacing: 0.02em;
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
-  overflow: hidden; }
-
 .project-style {
   font-family: "PT Sans", sans-serif;
   letter-spacing: 0.6em;
@@ -420,23 +486,41 @@ h6 {
       text-decoration: none; }
 
 .side-copy {
-  font-family: "PT Serif", serif;
-  letter-spacing: 0.02em;
+  font-size: 4.8em;
+  font-family: "PT Sans", sans-serif;
+  line-height: .9em;
+  align: left;
+  padding-bottom: 15px !important;
+  padding-top: 0px !important;
+  border-bottom: thin solid #000000;
+  border-left: none;
+  border-right: none;
+  border-top: none; }
+
+.side-copy-2 {
+  font-size: 1.6em;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.4em;
+  align: left;
   padding-bottom: 0px !important;
-  padding-top: 0px !important; }
-  .side-copy a:link {
+  padding-top: 13px !important;
+  padding-left: 2% !important;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: none; }
+  .side-copy-2 a:link {
     color: #b0afaf !important;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 1.4em; }
-  .side-copy a:hover {
-    color: black !important;
+    font-style: normal;
+    font-weight: normal; }
+  .side-copy-2 a:hover {
+    color: #b0afaf !important;
     text-decoration: none; }
-  .side-copy a:focus {
-    color: black !important;
+  .side-copy-2 a:focus {
+    color: #b0afaf !important;
     text-decoration: none; }
-  .side-copy a:active {
-    color: black !important;
+  .side-copy-2 a:active {
+    color: #b0afaf !important;
     text-decoration: none; }
 
 body {
@@ -479,8 +563,13 @@ img.device {
   width: 100%;
   border-style: none; }
 
-.extra-pad-left {
-  padding-left: 0px !important; }
+.extra-pad-top2 {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.extra-pad-footer {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important; }
 
 .extra-pad-right {
   padding-right: 0px !important; }
@@ -509,11 +598,36 @@ img.device {
   background-image: url("../img/one.jpg");
   background-size: cover; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?6pxcm3");
+  src: url("../fonts/icomoon.eot?6pxcm3#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?6pxcm3") format("truetype"), url("../fonts/icomoon.woff?6pxcm3") format("woff"), url("../fonts/icomoon.svg?6pxcm3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-mail:before {
+  content: "\e900"; }
+
+.icon-mail2:before {
+  content: "\e901"; }
+
 /* _sections.scss */
 #rectangle {
-  width: 80px;
-  height: 2px;
-  background: #b0afaf; }
+  width: 160px;
+  height: 1px;
+  background: black; }
 
 /* -----------------------------------------------------------------------------
 
@@ -590,6 +704,11 @@ img.device {
 
 /* -----------------------------------------------------------------------------
 
+  Hamburger collapse
+  
+----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+
   NEW ANIMATED 90 degree turn HAMBURGER CLASSES
   
 ----------------------------------------------------------------------------- */
@@ -638,10 +757,6 @@ img.device {
   transform: rotate(45deg); }
 
 @media (min-width: 768px) {
-  .side-copy {
-    text-align: right;
-    float: left !important; }
-
   .pad-left {
     padding-left: 15% !important; }
 
@@ -701,7 +816,12 @@ h6 {
     padding-top: 0px !important; }
 
   .extra-pad-top2 {
-    padding-top: 20px !important; }
+    padding-top: 10px;
+    margin-top: 0px; }
+
+  .extra-pad-proj {
+    padding-top: 0px;
+    padding-bottom: 0px; }
 
   .list-unstyled.love li {
     max-width: 767px;
@@ -744,32 +864,58 @@ h6 {
     display: none; }
 
   h4 {
-    text-align: left; }
+    text-align: left;
+    font-size: 2em !important;
+    margin-left: 0px !important; }
 
   h5 {
     font-family: "PT Sans", sans-serif;
     font-size: 5em !important;
     line-height: .80em !important;
-    color: white !important;
+    color: black !important;
     font-weight: bold;
     margin-top: 5% !important;
     margin-bottom: 10px !important;
     margin-left: 0 !important; }
     h5 a:link {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
     h5 a:hover {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
     h5 a:focus {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
     h5 a:visited {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
     h5 a:active {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
+
+  .lil-kill {
+    display: none; }
+
+  .extra-pad-footer {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important; }
+
+  .side-copy {
+    font-size: 3em;
+    font-family: "PT Sans", sans-serif;
+    line-height: .9em;
+    align: left;
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
+
+  .side-copy-2 {
+    font-size: 1.5em;
+    font-family: "PT Sans", sans-serif;
+    line-height: 1.3em;
+    align: left;
+    padding-top: 4px;
+    margin-left: 3%;
+    margin-right: 2%; }
 
   #adjust {
     font-size: 4vw;
