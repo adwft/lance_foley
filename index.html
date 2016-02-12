@@ -14,14 +14,13 @@
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- Font Awesome Link -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- icomoon font Link -->
     
     <!-- Google Fonts External Link -->
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700' rel='stylesheet' type='text/css'> 
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-
+  
   </head>
 
   <body>
@@ -43,7 +42,7 @@
         <div class="collapse navbar-collapse" id="collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html#afs-cd"><strong>Projects</strong></a></li>
-            <li><a href="mailto:lance@adwft.com"><strong>Email</strong></a></li>
+            <li><a href="mailto:lance@adwft.com"><span class="icon-mail2"></span></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
 
@@ -80,7 +79,7 @@
         <div class="row">
         <div class="col-md-1"></div>
           <div class="col-md-10">
-            <h4>I'm a creative director and designer working freelance and living in NYC.</h4>
+            <h4>I'm a creative director and designer living and freelancing in NYC.</h4>
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -417,7 +416,7 @@
           <div class="col-md-12">
             <p class="side-copy"><strong>Thanks for visiting.</strong></p>
           </div>
-          <div><p class="side-copy-2">Like to work together or have a project to discuss?<span class="lil-kill"> Happen to be a Nigerian prince with a fortune to share, if only you had someone to help with the fees? </span><a href="mailto:lance@adwft.com"> lance@adwft.com</a></p> 
+          <div><p class="side-copy-2">Like to work together or have a project to discuss?<span class="lil-kill"> Happen to be a Nigerian prince with a fortune to share - need some help with the fees? ...email</span><a href="mailto:lance@adwft.com"> lance@adwft.com</a></p> 
           </div>
         </div>
       </div>
@@ -446,6 +445,17 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Close Hamburger script -->
+    <script>
+    $(".navbar-nav li a").click(function (event) {
+    // check if window is small enough so dropdown is created
+    var toggle = $(".navbar-toggle").is(":visible");
+    if (toggle) {
+      $(".navbar-collapse").collapse('hide');
+    }
+    });
+    </script>
 
 
     <!-- Floating Back Button Script-->
