@@ -420,7 +420,7 @@ h6 {
 .side-copy-2 {
   font-size: 1.6em;
   font-family: "PT Sans", sans-serif;
-  line-height: 1.2em;
+  line-height: 1.4em;
   align: left;
   padding-bottom: 0px !important;
   padding-top: 13px !important;
@@ -803,6 +803,7 @@ h6 {
     font-family: "PT Sans", sans-serif;
     line-height: 1.3em;
     align: left;
+    padding-top: 4px;
     margin-left: 3%;
     margin-right: 2%; }
 
