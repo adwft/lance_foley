@@ -15,13 +15,9 @@
 .extra-pad-top {
   padding-top: 40px; }
 
-.extra-pad-top2 {
-  padding-top: 20px;
-  margin-top: 20px; }
-
 .extra-pad-bottom {
-  padding-bottom: 40px;
-  margin-bottom: 40px; }
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
 
 .space-pad {
   padding-bottom: 20px;
@@ -178,10 +174,10 @@ h3 {
     text-decoration: none; }
 
 h4 {
-  font-family: "PT Serif", serif;
-  font-size: 28px !important;
-  line-height: 1.2em;
-  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 3em !important;
+  line-height: 1em;
+  text-align: left;
   color: black !important;
   font-weight: normal;
   margin-top: 10px !important; }
@@ -204,25 +200,25 @@ h5 {
   font-family: "PT Sans", sans-serif;
   font-size: 7em !important;
   line-height: 1em !important;
-  color: white !important;
+  color: black !important;
   font-weight: bold;
   margin-top: 10% !important;
   margin-bottom: 10px !important;
   margin-left: 15% !important; }
   h5 a:link {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
   h5 a:hover {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
   h5 a:focus {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
   h5 a:visited {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
   h5 a:active {
-    color: white !important;
+    color: black !important;
     text-decoration: none; }
 
 h6 {
@@ -373,16 +369,6 @@ h6 {
     color: #b0afaf !important;
     text-decoration: none; }
 
-.main-copy-3 {
-  font-family: "PT Serif", serif;
-  color: black !important;
-  font-size: 28px !important;
-  line-height: 1.2em;
-  letter-spacing: 0.02em;
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
-  overflow: hidden; }
-
 .project-style {
   font-family: "PT Sans", sans-serif;
   letter-spacing: 0.6em;
@@ -420,23 +406,41 @@ h6 {
       text-decoration: none; }
 
 .side-copy {
-  font-family: "PT Serif", serif;
-  letter-spacing: 0.02em;
+  font-size: 4.8em;
+  font-family: "PT Sans", sans-serif;
+  line-height: .9em;
+  align: left;
+  padding-bottom: 15px !important;
+  padding-top: 0px !important;
+  border-bottom: thin solid #000000;
+  border-left: none;
+  border-right: none;
+  border-top: none; }
+
+.side-copy-2 {
+  font-size: 1.6em;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.2em;
+  align: left;
   padding-bottom: 0px !important;
-  padding-top: 0px !important; }
-  .side-copy a:link {
+  padding-top: 13px !important;
+  padding-left: 2% !important;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: none; }
+  .side-copy-2 a:link {
     color: #b0afaf !important;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 1.4em; }
-  .side-copy a:hover {
-    color: black !important;
+    font-style: normal;
+    font-weight: normal; }
+  .side-copy-2 a:hover {
+    color: #b0afaf !important;
     text-decoration: none; }
-  .side-copy a:focus {
-    color: black !important;
+  .side-copy-2 a:focus {
+    color: #b0afaf !important;
     text-decoration: none; }
-  .side-copy a:active {
-    color: black !important;
+  .side-copy-2 a:active {
+    color: #b0afaf !important;
     text-decoration: none; }
 
 body {
@@ -479,8 +483,13 @@ img.device {
   width: 100%;
   border-style: none; }
 
-.extra-pad-left {
-  padding-left: 0px !important; }
+.extra-pad-top2 {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.extra-pad-footer {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important; }
 
 .extra-pad-right {
   padding-right: 0px !important; }
@@ -638,10 +647,6 @@ img.device {
   transform: rotate(45deg); }
 
 @media (min-width: 768px) {
-  .side-copy {
-    text-align: right;
-    float: left !important; }
-
   .pad-left {
     padding-left: 15% !important; }
 
@@ -701,7 +706,12 @@ h6 {
     padding-top: 0px !important; }
 
   .extra-pad-top2 {
-    padding-top: 20px !important; }
+    padding-top: 10px;
+    margin-top: 0px; }
+
+  .extra-pad-proj {
+    padding-top: 0px;
+    padding-bottom: 0px; }
 
   .list-unstyled.love li {
     max-width: 767px;
@@ -744,32 +754,57 @@ h6 {
     display: none; }
 
   h4 {
-    text-align: left; }
+    text-align: left;
+    font-size: 2em !important;
+    margin-left: 0px !important; }
 
   h5 {
     font-family: "PT Sans", sans-serif;
     font-size: 5em !important;
     line-height: .80em !important;
-    color: white !important;
+    color: black !important;
     font-weight: bold;
     margin-top: 5% !important;
     margin-bottom: 10px !important;
     margin-left: 0 !important; }
     h5 a:link {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
     h5 a:hover {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
     h5 a:focus {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
     h5 a:visited {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
     h5 a:active {
-      color: white !important;
+      color: black !important;
       text-decoration: none; }
+
+  .lil-kill {
+    display: none; }
+
+  .extra-pad-footer {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important; }
+
+  .side-copy {
+    font-size: 3em;
+    font-family: "PT Sans", sans-serif;
+    line-height: .9em;
+    align: left;
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
+
+  .side-copy-2 {
+    font-size: 1.5em;
+    font-family: "PT Sans", sans-serif;
+    line-height: 1.3em;
+    align: left;
+    margin-left: 3%;
+    margin-right: 2%; }
 
   #adjust {
     font-size: 4vw;

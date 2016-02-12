@@ -151,10 +151,10 @@ h3 {
 }
 
 h4 {
-	font-family: $serif-font-family;
-    font-size: 28px !important;
-    line-height: 1.2em;
-    text-align: center;
+	  font-family: $reg-font-family;
+    font-size: 3em !important;
+    line-height: 1em;
+    text-align: left;
     color: $black !important;
     font-weight: normal;
     margin-top: 10px !important;
@@ -182,29 +182,29 @@ h5 {
 	font-family: $reg-font-family;
     font-size: 7em !important;
     line-height: 1em !important;
-    color: $white !important;
+    color: $black !important;
     font-weight: bold;
     margin-top: 10% !important;
     margin-bottom: 10px !important;
     margin-left: 15% !important;
     a:link{ 
-      color: $white !important;
+      color: $black !important;
       text-decoration: none; 
     }
     a:hover{ 
-      color: $white !important;
+      color: $black !important;
       text-decoration: none; 
     }
     a:focus{
-      color: $white !important;
+      color: $black !important;
       text-decoration: none;     
     }
     a:visited{
-      color: $white !important;
+      color: $black !important;
       text-decoration: none;     
     }
     a:active{
-     color: $white !important; 
+     color: $black !important; 
      text-decoration: none;    
     }
 }
@@ -389,16 +389,6 @@ h6 {
     }
 }
 
-.main-copy-3 {
-  font-family: $serif-font-family;
-  color: $black !important;
-  font-size: 28px !important;
-  line-height: 1.2em;
-  letter-spacing: 0.02em;
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
-  overflow: hidden;
-}
 
 .project-style {
   font-family: $reg-font-family;
@@ -448,29 +438,48 @@ h6 {
 }
 
 .side-copy {
-  font-family: $serif-font-family;
-  letter-spacing: 0.02em;
-  padding-bottom: 0px !important;
+  font-size: 4.8em;
+  font-family: $reg-font-family;
+  line-height: .9em;
+  align: left;
+  padding-bottom: 15px !important;
   padding-top: 0px !important;
-  	a:link{ 
+  border-bottom: thin solid #000000;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.side-copy-2 {
+  font-size: 1.6em;
+  font-family: $reg-font-family;
+  line-height: 1.2em;
+  align: left;
+  padding-bottom: 0px !important;
+  padding-top: 13px !important;
+  padding-left: 2% !important;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+    a:link{ 
       color: $lt-grey !important;
-      font-style: italic;
+      font-style: normal;
       font-weight: normal;
-      font-size: 1.4em;
     }
     a:hover{ 
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none; 
     }
     a:focus{
-      color: $black !important;
+      color: $lt-grey !important;
       text-decoration: none;     
     }
     a:active{
-     color: $black !important; 
+     color: $lt-grey !important; 
      text-decoration: none;    
     }
-}
+} 
 
 body {
 	font-family: $serif-font-family;
@@ -524,9 +533,14 @@ img.device{
 //
 //
 // Lists
+.extra-pad-top2{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-.extra-pad-left{
- 	padding-left: 0px !important;
+.extra-pad-footer {
+ 	padding-top: 80px !important;
+  padding-bottom: 80px !important;
  }
 
 .extra-pad-right{
