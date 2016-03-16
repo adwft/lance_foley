@@ -677,7 +677,7 @@ img.device {
 ----------------------------------------------------------------------------- */
 .navbar {
   border: none;
-  background: none; }
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .navbar-brand {
   font-family: "PT Sans Narrow", sans-serif;
@@ -789,7 +789,7 @@ h6 {
     background-color: rgba(0, 0, 0, 0.8); }
 
   .navbar {
-    background-color: rgba(255, 255, 255, 0.6); }
+    background-color: rgba(255, 255, 255, 0.9); }
 
   .image-left {
     height: 50%;
@@ -853,7 +853,8 @@ h6 {
 
   .nav {
     font-size: 4em;
-    line-height: 2em !important; }
+    line-height: 2em !important;
+    text-align: center; }
     .nav li {
       margin: 40px 0; }
 
