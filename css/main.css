@@ -27,6 +27,10 @@
   padding-bottom: 10px;
   margin-bottom: 10px; }
 
+.space-pad3 {
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+
 .extra-pad-left {
   padding-left: 30px; }
 
@@ -233,6 +237,49 @@ h6 {
   opacity: 0.5;
   font-style: italic;
   margin-top: 10px !important; }
+
+.textcontainer {
+  height: 500px;
+  line-height: 430px; }
+
+.textcontainer2 {
+  height: 300px;
+  line-height: 300px; }
+
+.textcontainer3 {
+  height: 325px;
+  line-height: 325px; }
+
+.textcontainer4 {
+  height: 300px;
+  line-height: 300px; }
+
+.vcenter {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.1em !important;
+  line-height: 1.5em !important;
+  color: black !important;
+  opacity: 0.5;
+  font-style: none;
+  margin-top: 10px !important;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.5em !important;
+  margin-right: 1.5em !important; }
+
+.vcenter2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.1em !important;
+  line-height: 1.5em !important;
+  color: black !important;
+  opacity: 0.5;
+  font-style: none;
+  margin-top: 3em !important;
+  margin-bottom: 3em !important;
+  margin-left: 1.5em !important;
+  margin-right: 1.5em !important;
+  display: inline-block;
+  vertical-align: middle; }
 
 .list-new {
   font-family: "PT Sans", sans-serif;
@@ -785,6 +832,31 @@ h6 {
   margin-right: 15px !important; }
 
 @media (max-width: 767px) {
+  .vcenter2 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 1.1em !important;
+    line-height: 1.5em !important;
+    color: black !important;
+    opacity: 0.5;
+    font-style: none;
+    margin-top: 1.5em !important;
+    margin-bottom: .5em !important;
+    margin-left: 1.5em !important;
+    margin-right: 1.5em !important;
+    display: inline-block;
+    vertical-align: middle; }
+
+  .textcontainer {
+    height: 300px;
+    line-height: 300px; }
+
+  .textcontainer4 {
+    height: 200px;
+    line-height: 200px; }
+
+  .space-pad {
+    display: none; }
+
   #custom-nav {
     background-color: rgba(0, 0, 0, 0.8); }
 
@@ -860,9 +932,6 @@ h6 {
 
   h2 {
     margin-bottom: 20px !important; }
-
-  h3 {
-    display: none; }
 
   h4 {
     text-align: left;
