@@ -281,6 +281,32 @@ h6 {
   display: inline-block;
   vertical-align: middle; }
 
+.list-arthome {
+  font-family: "PT Sans", sans-serif;
+  color: black !important;
+  text-decoration: none !important;
+  font-style: italic !important; }
+  .list-arthome a:link {
+    color: black !important;
+    font-style: none;
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 20px !important;
+    margin-top: 20px !important;
+    text-decoration: none !important; }
+  .list-arthome a:hover {
+    color: black !important;
+    text-decoration: none; }
+  .list-arthome a:focus {
+    color: black !important;
+    text-decoration: none; }
+  .list-arthome a:active {
+    color: black !important;
+    text-decoration: none; }
+  .list-arthome a:visited {
+    color: black !important;
+    text-decoration: none; }
+
 .list-new {
   font-family: "PT Sans", sans-serif;
   color: black !important;
