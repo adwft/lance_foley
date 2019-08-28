@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>LANCE FOLEY</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- icomoon font Link -->
+    
+    <!-- Google Fonts External Link -->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74205574-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+
+    <nav id="navbar-fade" class="navbar2 navbar-default navbar-fixed-top navbar-static">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><strong>LANCE FOLEY</strong></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="collapse-1">
+          <ul class="nav2 navbar-nav navbar-right">
+            <!-- <li><a href="#"><span class="alil">PROJECTS</span></a></li>
+            <li><a href="#"><span class="alil">IN PROCESS</span></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-modal"><span class="alil">DESIGN</span></a></li>
+            <li><a href="#"><span class="alil">INK</span></a></li>
+            <li><a href="#">CONTACT</a></li> -->
+            <!-- <li><a href="mailto:lance@adwft.com"><span class="icon-mail2"></span></a></li> -->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+<!-- BEGIN # MODAL LOGIN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+        </div>
+                
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+                
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+                    <div class="modal-body">
+                <div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+                <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End # Login Form -->
+                    
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+                  <div class="modal-body">
+                <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+                <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+                    
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+                    <div class="modal-body">
+                <div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+                <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End | Register Form -->
+                    
+                </div>
+                <!-- End # DIV Form -->
+                
+      </div>
+    </div>
+  </div>
+    <!-- END # MODAL LOGIN -->
+
+
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="extra-pad">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Art Section -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="art-breathe">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+          <div class="col-md-1"></div>
+           <div class="col-md-10">
+            <img class="device" src="img/art/eyes2_.png">
+           </div>
+           <div class="col-md-1"></div>
+        </div>
+      </container>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-6"></div>
+           <div class="col-sm-5"></div>
+          </div>
+      </container>
+    </section>
+
+    <section>
+      <div class="extra-pad-top3">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img class="divide" id="divide" src="img/art/Line.png">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <span class="proj-title"><strong><i><a href="#">INSTEAD OF WORDS, WE SPOKE WITH OUR EYES</a></i></strong>&emsp;&nbsp;&nbsp;</span><span class="proj-info">2017 85 x 57 inches   Graphite, Pentel red ink, 140lb arches watercolor paper</span>
+          </div>
+          <div class="col-md-1"></div>
+        <!-- <div class="col-md-1"></div> -->
+        </div>
+      </div>
+    </section>  
+
+
+    <section>
+      <div class="container" id="top">
+        <div class="row">
+          <div class="extra-pad-proj">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- End of New Art Section -->
+
+    <!-- New Art Section -->
+
+        <section>
+      <div class="container">
+        <div class="row">
+          <div class="art-breathe">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+           <div class="col-md-12">
+            <img class="device" src="img/art/eyes2_.png">
+          </div>
+          </div>
+      </container>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-6"></div>
+           <div class="col-sm-5"></div>
+          </div>
+      </container>
+    </section>
+
+    <section>
+      <div class="container extra-pad-top3">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="divide" id="divide" src="img/art/Line.png">
+          </div>
+        </div>
+        <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+          <div class="col-md-12">
+            <span class="proj-title"><strong><i><a href="#">MONSTERS ROAM</a></i></strong>&emsp;</span><span class="proj-info">2017 85 x 57 inches   Graphite, Pentel red ink, 140lb arches watercolor paper</span>
+            </div>
+        <!-- <div class="col-md-1"></div> -->
+        </div>
+      </div>
+    </section>  
+
+
+    <section>
+      <div class="container" id="top">
+        <div class="row">
+          <div class="extra-pad-proj">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- End of New Art Section -->
+
+
+
+        <!-- New Art Section -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="art-breathe">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+          <div class="col-md-1"></div>
+           <div class="col-md-10">
+            <span class="poem2"><br><br><strong>ni laughed</strong><br><br>i was drinking a bottled tea<br>and smoking a cigarette with Ni<br>at a little bench near the window that we sometimes used as a table.<br><br>I was nodding off<br>and the cigarette had burnt a small hole near the neck of the tea bottle.<br><br>You could see perfectly into the bottle.<br><br>I picked up the bottle<br>and slowly turned it sideways...,<br>to see the stream of tea pour from the small hole......nothing came out.<br><br>the cigarette<br>had not burned all the way through,<br>only the colored plastic label that wrapped the bottle had been melted.<br><br>I looked at Ni who had been nodding off and said, "look a tea hole" - Ni laughed and laid on my lap.</span>
+           </div>
+           <div class="col-md-1"></div>
+        </div>
+      </container>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-6"></div>
+           <div class="col-sm-5"></div>
+          </div>
+      </container>
+    </section>
+
+    <section>
+      <div class="extra-pad-top3">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img class="divide" id="divide" src="img/art/Line.png">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <span class="proj-title"><strong><i><a href="#">ni laughed</a></i></strong>&emsp;&nbsp;&nbsp;</span><span class="proj-info">2007 Taipei, Taiwan</span>
+          </div>
+          <div class="col-md-1"></div>
+        <!-- <div class="col-md-1"></div> -->
+        </div>
+      </div>
+    </section>  
+
+
+    <section>
+      <div class="container" id="top">
+        <div class="row">
+          <div class="extra-pad-proj">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- End of New Art Section -->
+
+
+        <!-- New Art Section -->
+
+        <section>
+      <div class="container">
+        <div class="row">
+          <div class="art-breathe">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+           <div class="col-md-12">
+            <img class="device" src="img/art/eyes1_1525x1017.png">
+          </div>
+          </div>
+      </container>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-6"></div>
+           <div class="col-sm-5"></div>
+          </div>
+      </container>
+    </section>
+
+    <section>
+      <div class="extra-pad-top3">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img class="divide" id="divide" src="img/art/Line.png">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+        <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <span class="proj-title"><strong><i><a href="#">INSTEAD OF WORDS, WE SPOKE WITH OUR EYES</a></i></strong>&emsp;&nbsp;&nbsp;</span><span class="proj-info">2017 85 x 57 inches   Graphite, Pentel red ink, 140lb arches watercolor paper</span>
+            </div>
+        <div class="col-md-1"></div>
+        </div>
+      </div>
+    </section>  
+
+
+    <section>
+      <div class="container" id="top">
+        <div class="row">
+          <div class="extra-pad-proj">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- End of New Art Section -->
+
+
+
+
+
+    <!-- New Art Section -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="art-breathe">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+          <div class="col-md-1"></div>
+           <div class="col-md-10">
+            <span class="poem1"><br><br><strong>what the rest of us don't know</strong><br><br>breathing is a chore,<br>the mosquito keeps coming back,<br>he knows i'm tired,<br><br>monkeys aren't the smartest animals.<br><br></span>
+           </div>
+           <div class="col-md-1"></div>
+        </div>
+      </container>
+    </section>
+
+    <section>
+      <container>
+        <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-6"></div>
+           <div class="col-sm-5"></div>
+          </div>
+      </container>
+    </section>
+
+    <section>
+      <div class="extra-pad-top3">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img class="divide" id="divide" src="img/art/Line.png">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <span class="proj-title"><strong><i><a href="#">INSTEAD OF WORDS, WE SPOKE WITH OUR EYES</a></i></strong>&emsp;&nbsp;&nbsp;</span><span class="proj-info">2017 85 x 57 inches   Graphite, Pentel red ink, 140lb arches watercolor paper</span>
+          </div>
+          <div class="col-md-1"></div>
+        <!-- <div class="col-md-1"></div> -->
+        </div>
+      </div>
+    </section>  
+
+
+    <section>
+      <div class="container" id="top">
+        <div class="row">
+          <div class="extra-pad-proj">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- End of New Art Section -->
+
+
+
+    <section>
+      <div class="container" id="top">
+        <div class="row">
+          <div class="extra-pad-proj">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Begin Category Title -->
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <span class="category"><strong>new</strong></span>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+     <!-- End Category Title -->
+
+
+    <!-- Begin Category Images -->
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img class="thumb-1" src="img/art/small-001.jpg"><img class="thumb-1" src="img/art/small-002.jpg"><img class="thumb-1" src="img/art/small-003.jpg"><img class="thumb-1" src="img/art/small-011.jpg"><img class="thumb-1" src="img/art/small-005.jpg"><img class="thumb-1" src="img/art/small-017.jpg">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+     <!-- End Category Images -->
+
+
+    <section>
+      <div class="container" id="top">
+        <div class="row">
+          <div class="extra-pad-sect">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+      <!-- Begin Category Title -->
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <span class="category"><strong>past</strong></span>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+     <!-- End Category Title -->
+
+
+    <!-- Begin Category Images -->
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img class="thumb-1" src="img/art/small-007.png"><img class="thumb-1" src="img/art/small-008.jpg"><img class="thumb-1" src="img/art/small-009.jpg"><img class="thumb-1" src="img/art/small-010.jpg">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+     <!-- End Category Images -->
+
+
+    <section>
+      <div class="container" id="top">
+        <div class="row">
+          <div class="extra-pad-sect">
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      <!-- Begin Category Title -->
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <span class="category"><strong>words</strong></span>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+     <!-- End Category Title -->
+
+
+    <!-- Begin Category Images -->
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img class="thumb-1" src="img/art/small-012.jpg"><img class="thumb-1" src="img/art/small-013.jpg"><img class="thumb-1" src="img/art/small-014.jpg"><img class="thumb-1" src="img/art/small-015.jpg"><img class="thumb-1" src="img/art/small-016.jpg">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+     <!-- End Category Images -->
+
+
+
+     <section>
+       <div class="container">
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <!-- 7 -->
+            <div class="col-xs-12 col-sm-6 col-md-5 extra-pad-top">
+              <div class="image-left pad-right">
+                  <a href="projects-noarm.html" name="noarm"><img class="device" src="img/noarm/noa_03.jpg"></a>
+              </div>
+              <div class="text-left pad-right">
+                  <p><a class="list-new" href="projects-noarm.html"><strong>No Arms</strong></a> <br>
+                  <a class="new" href="projects-noarm.html"><strong>Illustration</strong></a></p>
+              </div>
+            </div> 
+            <!-- 8 -->
+            <div class="col-xs-12 col-sm-6 col-md-5 extra-pad-top">
+              <div class="image-left pad-left">
+                  <a href="projects-ri.html" name="ri"><img class="device" src="img/illustration/fox_01.jpg"></a>
+              </div>
+              <div class="text-left pad-left">
+                  <p><a class="list-new" href="projects-ri.html"><strong>Random Illustrations</strong></a>
+                  <a class="new" href="projects-ri.html"> 
+                  <br><strong>Illustration</strong></a>
+                  </p>
+              </div>
+            </div>  
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <!-- 15 -->
+            <div class="col-xs-12 col-sm-6 col-md-5 extra-pad-top">
+              <div class="image-left pad-right">
+                  <a href="projects-wu.html" name="wu"><img class="device" src="img/worksu/wu4.jpg"></a>
+              </div>
+              <div class="text-left pad-right">
+                  <p><a class="list-new" href="projects-wu.html"><strong>Works Untitled</strong></a> <br>
+                  <a class="new" href="projects-wu.html"><strong>Art, Design & Photography</strong></a></p>
+              </div>
+            </div> 
+            <!-- 16 -->
+            <div class="col-xs-12 col-sm-6 col-md-5 extra-pad-top">
+              <div class="image-left pad-left">
+                  <a href="projects-aladder.html" name="alad"><img class="device" src="img/aladder/alad_04.jpg"></a>
+              </div>
+              <div class="text-left pad-left">
+                  <p><a class="list-new" href="projects-aladder.html"><strong>A Ladder Studio</strong></a>
+                  <a class="new" href="projects-aladder.html"> 
+                  <br><strong>Identity & Website Design</strong></a>
+                  </p>
+              </div>
+            </div> 
+            <div class="col-md-1"></div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <!-- 17 -->
+            <div class="col-xs-12 col-sm-6 col-md-5 extra-pad-top">
+              <div class="image-left pad-right">
+                  <a href="projects-mouseashtray.html" name="mouse"><img class="device" src="img/mousetray/mouse_01a.jpg"></a>
+              </div>
+              <div class="text-left pad-right">
+                  <p><a class="list-new" href="projects-mouseashtray.html"><strong>Smoking Kills</strong></a> <br>
+                  <a class="new" href="projects-mouseashtray.html"><strong>Product Design / Sculpture</strong></a></p>
+              </div>
+            </div> 
+            <!-- 18 -->
+            <div class="col-xs-12 col-sm-6 col-md-5 extra-pad-top">
+              <div class="image-left pad-left">
+                  <a href="projects-pea.html" name="pea"><img class="device" src="img/illustration/por_3.jpg"></a>
+              </div>
+              <div class="text-left pad-left">
+                  <p><a class="list-new" href="projects-pea.html"><strong>Peacock & Model House</strong></a>
+                  <a class="new" href="projects-pea.html"> 
+                  <br><strong>Paper Mache Peacock & Display Art</strong></a>
+                  </p>
+              </div>
+            </div> 
+            <div class="col-md-1"></div>
+        </div>
+
+  </div>
+</section>
+
+
+    <!-- Don't Erase Below. This is the Top Link -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 extra-pad-footer">
+          </div>
+        </div>
+      </div>
+    </section>  
+
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 extra-pad-bottom">
+          </div>
+        </div>
+      </div>
+    </section>  
+
+
+
+    <!----------- Footer ------------>
+    <footer class="footer-bs">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-3 footer-nav animated fadeInUp">
+                <ul class="list">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">DESIGN</a></li>
+                    <li><div class="input-group footer-padding">
+                        <input type="text" class="form-control no-border" placeholder="SIGN UP">
+                        <span class="input-group-btn"><button class="btn-arrow" type="button"><img src="img/art/right-arrow2.png" width="15px"></button>
+                      </span>
+                        </div><!-- /input-group -->
+                    </li>
+                    <li><img src="img/art/instagr.png" width="18px">&emsp;&emsp;&emsp;<img src="img/art/adwft.png" width="50px">
+                    </li>
+                </ul>
+          </div>
+          <div class="col-md-4 footer-nav animated fadeInUp">
+              <div class="col-md-6"></div>
+              <div class="col-md-6"></div>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-3 footer-ns animated fadeInRight content2">
+                <img src="img/art/rabbits1.png">
+          </div>
+        </div>
+        <div class="row col-md-12 text-center">
+          <span class="copyright">Copyright © 2018 Lance Foley, All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <!----------- End Footer ------------>
+
+    
+    <!-- Floating Back Button -->
+    <!-- <div class="scroll-top-wrapper ">
+      <span class="scroll-top-inner">
+        <h4>BACK</h4>
+      </span>
+    </div> -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+
+    <!-- Close Hamburger script -->
+    <script>
+    $(".navbar-nav li a").click(function (event) {
+    // check if window is small enough so dropdown is created
+    var toggle = $(".navbar-toggle").is(":visible");
+    if (toggle) {
+      $(".navbar-collapse").collapse('hide');
+    }
+    });
+    </script>
+
+
+    <!-- Beging Import Custom Modal Script -->
+    <script src="js/modal-pw.js"></script> <!-- added js function to hide and reveal nav on scroll -->
+
+    <!-- End Import Custom Modal Script -->
+
+  </body>
+</html>

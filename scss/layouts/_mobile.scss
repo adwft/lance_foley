@@ -4,6 +4,10 @@
 // Mobile Media Queries For Tablets and above
 @media(min-width:768px){
 
+    #divide {
+    content:url(../img/art/Line.png);
+  }
+
   .pad-left{
   padding-left: 15% !important;
   }
@@ -22,10 +26,22 @@
         margin: 0px 0;
       }
   }
+
+    .nav2 {
+    font-size: 14px;
+      li{
+        margin: 0px 0;
+      }
+  }
 }
 
 // Mobile Media Queries For Tablets
 @media(max-width:991px){
+  
+    #divide {
+    content:url(../img/art/Line.png);
+  }
+
   .pad-left{
   padding-left: 10% !important;
   }
@@ -50,6 +66,11 @@ h6 {
 //   .collapsing {
 //     background-color: rgba(255,255,255,0.6);
 //   }
+
+  #divide {
+    content:url(../img/art/Line3.png);
+  }
+
 
   .vcenter2 {
     font-family: $reg-font-family;
@@ -177,6 +198,23 @@ h6 {
       }
   }
   
+    .nav2 {
+    font-size: 4em;
+    line-height: 2em !important;
+    text-align: center;
+    padding-top: 0px !important;
+      li{
+        margin: 40px 0;
+      }
+  }
+
+
+  .alil {
+  padding-right: 0px;
+}
+
+
+
   h2 {
     margin-bottom: 20px !important;
   }

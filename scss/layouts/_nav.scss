@@ -58,9 +58,19 @@
   
 ----------------------------------------------------------------------------- */
 
+#navbar-fade {
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
 .navbar {
   border: none;
   background-color: rgba(255,255,255,0.9);
+}
+
+
+.navbar2 {
+  border: none;
+  background-color: rgba(255,255,255,0.6);
 }
 
 .navbar-brand {
@@ -88,6 +98,33 @@
       color: $black !important;     
     }
 }
+
+.alil {
+  padding-right: 20px;
+}
+
+.nav2 {
+  font-family: $nav-font-family;
+  font-size: 10px !important;
+  letter-spacing: 0.5px;
+  padding-bottom: 0px !important;
+  padding-top: 14px !important;
+  text-decoration: none !important; 
+  list-style-type: none;
+    a:hover{ 
+      color: $black !important; 
+      text-decoration: none !important; 
+    }
+    a:focus{
+      color: $black !important;  
+      text-decoration: none !important;    
+    }
+    a:active{
+      color: $black !important;
+      text-decoration: none !important;      
+    }
+}
+
 
 .navbar-default .navbar-nav>li>a {
   color: $black !important;
@@ -119,19 +156,23 @@
     transition: all 0.2s;
   }
   .top-bar {
-    -webkit-transform: translateX(6px) translateY(6px) rotateZ(90deg);
-    -ms-transform: translateX(6px) translateY(6px) rotateZ(90deg);
-    transform: translateX(6px) translateY(6px) rotateZ(90deg);
+    -webkit-transform: translateX(3px) rotate(45deg);
+    -webkit-transform-origin: 10% 10%;
+    -ms-transform: translateX(3px) rotate(45deg);
+    -ms-transform-origin: 10% 10%;
+    transform: translateX(3px) rotate(45deg);
+    transform-origin: 10% 10%;
   }
   .middle-bar {
-    -webkit-transform: rotateZ(90deg);
-    -ms-transform: rotateZ(90deg);
-    transform: rotateZ(90deg);
+    opacity: 0;
   }
   .bottom-bar {
-    -webkit-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
-    -ms-transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
-    transform: translateX(-6px) translateY(-6px) rotateZ(90deg);
+    -webkit-transform: translateX(3px) rotate(-45deg);
+    -webkit-transform-origin: 10% 90%;
+    -ms-transform: translateX(3px) rotate(-45deg);
+    -ms-transform-origin: 10% 90%;
+    transform: translateX(3px) rotate(-45deg);
+    transform-origin: 10% 90%;
   }
 }
 
@@ -146,9 +187,7 @@
     transform: rotate(0);
   }
   .middle-bar {
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
+    opacity: 1;
   }
   .bottom-bar {
     -webkit-transform: rotate(0);
